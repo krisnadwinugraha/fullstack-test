@@ -1,4 +1,4 @@
-Smart Todo App
+# Smart Todo App
 
 A full-stack task management application with AI-powered troubleshooting, real-time updates, and production-ready Docker deployment.
 
@@ -7,7 +7,7 @@ A full-stack task management application with AI-powered troubleshooting, real-t
 
 
 
- Features
+ # Features
  
   AI Auto-Fix - Automatically analyzes problematic tasks using Google Gemini AI and suggests technical solutions
   
@@ -19,7 +19,7 @@ A full-stack task management application with AI-powered troubleshooting, real-t
   
   Optimistic UI - Instant feedback with TanStack Query caching and state management
   
-Architecture
+# Architecture
 
 fullstack-test/
 
@@ -29,44 +29,46 @@ fullstack-test/
 
 └── docker-compose.yml
 
-Tech Stack:
+# Tech Stack:
 
 Backend: NestJS, Prisma ORM, PostgreSQL, Class-Validator
+
 Frontend: React 18, TypeScript, TailwindCSS, TanStack Query, Axios
 Infrastructure: Docker, Docker Compose
 
-🚀 Quick Start
-Prerequisites
+# Quick Start
+# Prerequisites
 
 Docker Desktop installed and running
 
-Installation
+# Installation
 
 Clone the repository
 
-bashgit clone <your-repo-url>
+git clone <your-repo-url>
 cd fullstack-test
 
-Start the application
+# Start the application
 
-bashdocker compose up --build
+docker compose up --build
+
 Wait for the logs showing:
 
-✅ Nest application successfully started
-✅ Local: http://localhost:5173/
+Nest application successfully started
+Local: http://localhost:5173/
 
 
-Initialize the database (first run only)
+# Initialize the database (first run only)
 
-bashdocker exec -it todo_server npx prisma migrate dev --name init
+docker exec -it todo_server npx prisma migrate dev --name init
 
-Access the app
-
+# Access the app
 
 Frontend: http://localhost:5173
+
 Backend API: http://localhost:3000
 
-Testing the Features
+# Testing the Features
 Test AI Troubleshooting
 
 Create a new task (e.g., "Deploy to Production")
@@ -84,7 +86,7 @@ The backend validates the x-user-id header on all requests.
 Frontend automatically includes this header
 Direct browser access to http://localhost:3000/api/todos returns 401 Unauthorized
 
-💻 Local Development (Without Docker)
+Local Development (Without Docker)
 Prerequisites
 
 Node.js v18+
