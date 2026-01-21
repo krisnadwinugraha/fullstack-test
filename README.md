@@ -34,6 +34,7 @@ fullstack-test/
 Backend: NestJS, Prisma ORM, PostgreSQL, Class-Validator
 
 Frontend: React 18, TypeScript, TailwindCSS, TanStack Query, Axios
+
 Infrastructure: Docker, Docker Compose
 
 # Quick Start
@@ -45,7 +46,8 @@ Docker Desktop installed and running
 
 Clone the repository
 
-git clone <your-repo-url>
+git clone https://github.com/krisnadwinugraha/fullstack-test
+
 cd fullstack-test
 
 # Start the application
@@ -55,6 +57,7 @@ docker compose up --build
 Wait for the logs showing:
 
 Nest application successfully started
+
 Local: http://localhost:5173/
 
 
@@ -72,7 +75,9 @@ Backend API: http://localhost:3000
 Test AI Troubleshooting
 
 Create a new task (e.g., "Deploy to Production")
+
 Change status to PROBLEM via dropdown
+
 Enter a technical issue in the red description box:
 
    Database connection refused on port 5432
@@ -103,19 +108,31 @@ cp .env.example .env
 npx prisma migrate dev --name init
 
 # Start development server
+
 npm run start:dev
+
 Frontend Setup
-bashcd client
+
+cd client
+
 npm install
+
 npm run dev
 
 Design Decisions
+
 Monorepo Structure
+
 Unified repository for seamless orchestration and simplified Docker context management.
+
 Prisma ORM
+
 Chosen over TypeORM for superior type-safety and schema-first design that prevents runtime errors.
+
 Resilient AI Integration
+
 Implements graceful degradation with mock fallback - if Gemini AI is unavailable, the system switches to simulated responses automatically.
+
 Docker Architecture
 
 Uses node:22-alpine for minimal image size
