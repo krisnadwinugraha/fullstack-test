@@ -11,13 +11,12 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "rootDir": "./src",
-    "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "ignoreDeprecations": "6.0"
-  }
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": ["src/**/*"]
 }
