@@ -3,7 +3,7 @@ import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 
-@Controller('api/todos') // Requirement: Endpoint must be /api/todos
+@Controller('api/todos') 
 export class TodoController {
   constructor(private readonly todoService: TodoService) {}
 

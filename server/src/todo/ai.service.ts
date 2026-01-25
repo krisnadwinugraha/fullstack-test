@@ -10,7 +10,7 @@ export class AiService {
     const apiKey = process.env.GEMINI_API_KEY;
     if (apiKey) {
       this.genAI = new GoogleGenerativeAI(apiKey);
-      this.model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });
+      this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.0-pro' });
     } else {
       console.warn(' No GEMINI_API_KEY found. AI Service initialized in MOCK mode.');
     }
